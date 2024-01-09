@@ -1,11 +1,5 @@
-/* Change the styling for the whole body */
-body {
-    color: white;
-}
-
-/* Inserts an element after the body (at the bottom) */
+/* Inserts an element after the body (at the bottom). This hides and preloads an image so it doesn't flicker when used later */
 body:after {
-    /* Below: hides and preloads an image so it doesn't flicker when used later */
     position: relative;
     width: 0;
     height: 0;
