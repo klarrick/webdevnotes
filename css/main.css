@@ -1,0 +1,131 @@
+/* Change the styling for the whole body */
+body {
+    color: white;
+}
+
+/* Inserts an element after the body (at the bottom) */
+body:after {
+    /* Below: hides and preloads an image so it doesn't flicker when used later */
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../css/img/brennan-bw.jpg);
+}
+
+/* Change the styling for all paragraphs */
+p {
+    color: blue;
+}
+
+/* Change the styling for all paragraphs inside of divs */
+div p {
+    color: red;
+}
+
+/* Using CSS IDs: in HTML, ID name goes after element name in the tag. You can only use each ID name for one element per page. ex: <p id="main-paragraph"></p> */
+#id-test {
+    color: black;
+}
+
+/* Using CSS classes: in HTML, class name goes after element name in the tag. You can use a class name as many times as you want. ex: <p class="main-paragraph"></p> */
+.class-test{
+    font-weight:bold;
+}
+
+/* Using multiple CSS classes: you can list CSS classes with a space in between, and the styling from both classes will be applied to the HTML element */
+
+.two-class-test{
+    font-size: medium;
+}
+
+/* Change the styling for all elements in a class inside of the body (nested elements) */
+body .class-test {
+    font-style: italic;
+}
+
+/* Basic font styling */
+.font-test {
+    color: #cb1717;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    /* Spacing between lines: should be greater than font-size */
+    line-height: 78px;
+    /* Spacing between words */
+    word-spacing: 25px;
+}
+
+.test-div {
+    background-color: white;
+    border: blue solid 10px;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    /* OR: margin: top right bottom left--
+    margin: 10px 5px 10px 5px*/
+
+    /* Padding vs margin: the margin is the space around an element's border, while padding is the space between an element's border and an element's content (within the element) */
+    padding: 10px 5px 10px 5px;
+
+    /* Float puts elements next to each other instead of above and below, but isn't used often because it's a bit outdated*/
+    /*float: left;*/
+
+    /* Z-index: determines order of elements--higher number goes in front and lower number goes behind*/
+    z-index: 100;
+
+    /* Changing the cursor when the element is hovered over */
+    cursor: grab;
+
+}
+
+.sunset-image {
+    width: 300px;
+    margin-left: 200px;
+}
+
+/* CSS pseudoclasses: Use a colon after the class name, like .class:hover 
+This means the styling is only applied when the element is hovered over */
+.sunset-image:hover {
+    width: 400px;
+}
+
+/* Adding background images */
+.back-image {
+    width: 300px;
+    height: 400px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    background-image: url(../css/img/brennan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* transition: (aspect being affected, usually all) (transition type) (time) */
+    /* Below transition affects the hovering image change */
+    transition: all ease-in-out 1s
+}
+
+.back-image:hover {
+    background-image: url(../css/img/brennan-bw.jpg);
+}
+
+/* For the above effect (an image changing to another image when hovered over), the new image has to be loaded the first time it appears, causing an ugly flicker. This can be solved by preloading the second image before it is used: see top of this file for the styling using body:after. */
+
+/* RANDOM NOTES */
+
+/* Make a new CSS file for each page if the styling is going to be very different, and link both the main style sheet and specific style sheet in the head section. Ex: 
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="contact.css">
+*/
+
+/* You can link to a CSS ID, and clicking the link will scroll down to the element that is labeled with the ID */
+
+/* Site for picking colors: color.adobe.com */
+
