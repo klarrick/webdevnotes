@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox Notes</title>
+        <link rel="stylesheet" href="flexbox.css">
+    </head>
+    
+    <body>
+
+        <header class="header-main">
+            <div class="div-1"></div>
+            <div class="div-2"></div>
+            <div class="div-3"></div>
+        </header>
+
+
+        <h1>Flexbox Notes</h1>
+        <p>Flexbox is used for formatting elements inside of a container. It only works for elements that are directly inside the container (not nested within another element in the container) </p>
+
+        <p>CSS Styling Syntax:</p>
+        <p>Setup: in the styling section for the overarching container, put "display: flex"</p>
+        <p>Flex-direction: </p>
+        <ul>
+            <li>row: horizontal row (default)</li>
+            <li>column: vertical column</li>
+            <li>row-reverse/column-reverse: swaps order of elements</li>
+        </ul>
+        <p>Flex-wrap: controls if elements go onto next line (if they don't fit on one line)</p>
+        <ul>
+            <li>wrap: elements will go onto next line (default)</li>
+            <li>nowrap: if elements don't fit on one line, they will be squeezed so that they fit</li>
+            <li>wrap-reverse: elements start from bottom and wrap upwards</li>
+        </ul>
+        <p>Justify-content: defines alignment along main axis</p>
+        <p>Align-content: defines aligment along the cross axis</p>
+        <p>Gap: row and column gap between items (gap: 50px 100px) </p>
+        <p>Order: goes in the styling section for each individual element, defines the order that the elements are in (ex: order: 3)</p>
+        <p>Flex-basis: sets the initial main size of an element (has to be at least this big)</p>
+        <p>Flex-grow: allows an element to grow to fill leftover space, works well for resizing browsers</p>
+        <p>Flex-shrink: allows an element to shrink to fit the content inside of it</p>
+        <p>Align-items: aligns items on main axis</p>
+        <ul>
+            <li>If you want individual items to be exempt from an align-item rule, you can add "align-self" to the individual item's style section</li>
+        </ul>
+
+        <img class="flexbox-poster" src="img/css-flexbox-poster.png">
+
+    </body>
+</html>
