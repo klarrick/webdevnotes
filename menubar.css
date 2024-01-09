@@ -1,0 +1,83 @@
+body {
+    background-color: #f2dbdb;
+}
+
+a {
+    cursor: pointer;
+}
+
+.header-main {
+    width: 100%;
+    height: 60px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-logo {
+    width: fit-content;
+    height: 100%;
+    background-color: pink;
+    padding-left: 10px;
+    display: flex;
+}
+
+.header-main-logo img {
+    height: 50px;
+    align-self: center;
+    padding-right: 10px;
+}
+
+.header-main-nav {
+    width: fit-content;
+    height: 100%;
+    background-color: pink;
+}
+
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+
+.header-main-nav ul li a {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    color: white;
+}
+
+.header-main-nav ul li a:hover {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    color: red;
+}
+
+.header-main-sm {
+    width: fit-content;
+    height: 100%;
+    background-color: pink;
+    padding-right: 10px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.header-main-sm-1 {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/window.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-2 {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/bird.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
